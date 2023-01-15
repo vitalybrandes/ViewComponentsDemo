@@ -1,0 +1,22 @@
+﻿@model IEnumerable<string>
+
+@*<a class="mr-2" href="#" onClick="history.go(-1); return false;"> <i class="fas fa-arrow-circle-left"></i> </a>*@
+<ul class="breadcrumb">
+    <li class="breadcrumb-item">
+        <a href="@Url.Content("~/")"><i class="fas fa-home"></i> Home</a>
+        @{
+            string last = Model.LastOrDefault();
+            foreach (var str in Model)
+            {
+                if (str.Equals(last))
+                {
+                    <a>/ @str.Humanize(LetterCasing.Title)</a>
+                }
+                else
+                {
+                    <a href="@Url.Content("~/"+@str)">/ @str.Humanize(LetterCasing.Title)</a>
+                }
+            }
+        }
+    </li>
+</ul>
