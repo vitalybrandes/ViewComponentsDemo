@@ -1,8 +1,8 @@
-# ViewComponentsDemo
-.net ViewComponents Demo collection
+# View Components Demo
+.net View Components Demo collection
 
 
-Added Dynamic Breadcrumb ViewCompoent that building breadcrumb based on Route
+Added Dynamic Breadcrumb ViewCompoent for asp.net core that building breadcrumb based on Route
 Dynamic Breadcrumb ViewCompoent allow to present Breadcrumb on Pares or Views including Hiperlink to previous page.
 
 
